@@ -1,0 +1,41 @@
+\hypertarget{_mines_8java_source}{}\doxysection{Mines.\+java}
+\label{_mines_8java_source}\index{src/mines/Mines.java@{src/mines/Mines.java}}
+\mbox{\hyperlink{_mines_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00001}00001\ \textcolor{keyword}{package\ }mines;}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00002}00002\ }
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00003}00003\ \textcolor{keyword}{import}\ java.awt.BorderLayout;}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00005}00005\ \textcolor{keyword}{import}\ javax.swing.JFrame;}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00006}00006\ \textcolor{keyword}{import}\ javax.swing.JLabel;}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00008}00008\ \textcolor{comment}{//\ Source:\ http://zetcode.com/tutorials/javagamestutorial/minesweeper/}}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00014}\mbox{\hyperlink{classmines_1_1_mines}{00014}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classmines_1_1_mines}{Mines}}\ \textcolor{keyword}{extends}\ JFrame\ \{}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00015}\mbox{\hyperlink{classmines_1_1_mines_abc56bc0374373f7a284c0b16590e7454}{00015}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{static}\ \textcolor{keyword}{final}\ \textcolor{keywordtype}{long}\ \mbox{\hyperlink{classmines_1_1_mines_abc56bc0374373f7a284c0b16590e7454}{serialVersionUID}}\ =\ 4772165125287256837L;}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00016}00016\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00017}\mbox{\hyperlink{classmines_1_1_mines_a27ffb5ee06ad8e8674b44b4f98e2cd41}{00017}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classmines_1_1_mines_a27ffb5ee06ad8e8674b44b4f98e2cd41}{WIDTH}}\ =\ 250;}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00018}\mbox{\hyperlink{classmines_1_1_mines_a97880ba0b5fc42f3cbd339e104895b78}{00018}}\ \ \ \ \ \textcolor{keyword}{private}\ \textcolor{keyword}{final}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classmines_1_1_mines_a97880ba0b5fc42f3cbd339e104895b78}{HEIGHT}}\ =\ 290;}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00020}\mbox{\hyperlink{classmines_1_1_mines_ad0cd9a0c720e0b5812a8545495f322c7}{00020}}\ \ \ \ \ \textcolor{keyword}{private}\ JLabel\ \mbox{\hyperlink{classmines_1_1_mines_ad0cd9a0c720e0b5812a8545495f322c7}{statusbar}};}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00024}\mbox{\hyperlink{classmines_1_1_mines_ae41fe72d42c1a61b80d141d5c57a3fe9}{00024}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{classmines_1_1_mines_ae41fe72d42c1a61b80d141d5c57a3fe9}{Mines}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00026}00026\ \ \ \ \ \ \ \ \ setDefaultCloseOperation(JFrame.EXIT\_ON\_CLOSE);}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00027}00027\ \ \ \ \ \ \ \ \ setSize(\mbox{\hyperlink{classmines_1_1_mines_a27ffb5ee06ad8e8674b44b4f98e2cd41}{WIDTH}},\ \mbox{\hyperlink{classmines_1_1_mines_a97880ba0b5fc42f3cbd339e104895b78}{HEIGHT}});}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00028}00028\ \ \ \ \ \ \ \ \ setLocationRelativeTo(\textcolor{keyword}{null});}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00029}00029\ \ \ \ \ \ \ \ \ setTitle(\textcolor{stringliteral}{"{}Minesweeper"{}});}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00031}00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_mines_ad0cd9a0c720e0b5812a8545495f322c7}{statusbar}}\ =\ \textcolor{keyword}{new}\ JLabel(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00032}00032\ \ \ \ \ \ \ \ \ add(\mbox{\hyperlink{classmines_1_1_mines_ad0cd9a0c720e0b5812a8545495f322c7}{statusbar}},\ BorderLayout.SOUTH);}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00034}00034\ \ \ \ \ \ \ \ \ add(\textcolor{keyword}{new}\ \mbox{\hyperlink{classmines_1_1_board}{Board}}(\mbox{\hyperlink{classmines_1_1_mines_ad0cd9a0c720e0b5812a8545495f322c7}{statusbar}}));}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00036}00036\ \ \ \ \ \ \ \ \ setResizable(\textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00037}00037\ \ \ \ \ \ \ \ \ setVisible(\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00038}00038\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00043}\mbox{\hyperlink{classmines_1_1_mines_a76f3f083a3b7ff74d621e5387d38f37f}{00043}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classmines_1_1_mines_a76f3f083a3b7ff74d621e5387d38f37f}{main}}(String[]\ args)\ \{}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00044}00044\ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{classmines_1_1_mines_ae41fe72d42c1a61b80d141d5c57a3fe9}{Mines}}();}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00045}00045\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_mines_8java_source_l00046}00046\ \}}
+
+\end{DoxyCode}

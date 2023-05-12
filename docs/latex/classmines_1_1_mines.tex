@@ -1,0 +1,157 @@
+\hypertarget{classmines_1_1_mines}{}\doxysection{mines.\+Mines Class Reference}
+\label{classmines_1_1_mines}\index{mines.Mines@{mines.Mines}}
+
+
+The main class for the Mines game.  
+
+
+Inheritance diagram for mines.\+Mines\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmines_1_1_mines}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmines_1_1_mines_ae41fe72d42c1a61b80d141d5c57a3fe9}{Mines}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the Mines class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classmines_1_1_mines_a76f3f083a3b7ff74d621e5387d38f37f}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\begin{DoxyCompactList}\small\item\em Entry point of the Mines game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final int \mbox{\hyperlink{classmines_1_1_mines_a27ffb5ee06ad8e8674b44b4f98e2cd41}{WIDTH}} = 250
+\item 
+final int \mbox{\hyperlink{classmines_1_1_mines_a97880ba0b5fc42f3cbd339e104895b78}{HEIGHT}} = 290
+\item 
+JLabel \mbox{\hyperlink{classmines_1_1_mines_ad0cd9a0c720e0b5812a8545495f322c7}{statusbar}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final long \mbox{\hyperlink{classmines_1_1_mines_abc56bc0374373f7a284c0b16590e7454}{serial\+Version\+UID}} = 4772165125287256837L
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main class for the Mines game. 
+
+Definition at line \mbox{\hyperlink{_mines_8java_source_l00014}{14}} of file \mbox{\hyperlink{_mines_8java_source}{Mines.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmines_1_1_mines_ae41fe72d42c1a61b80d141d5c57a3fe9}\label{classmines_1_1_mines_ae41fe72d42c1a61b80d141d5c57a3fe9}} 
+\index{mines.Mines@{mines.Mines}!Mines@{Mines}}
+\index{Mines@{Mines}!mines.Mines@{mines.Mines}}
+\doxysubsubsection{\texorpdfstring{Mines()}{Mines()}}
+{\footnotesize\ttfamily mines.\+Mines.\+Mines (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for the Mines class. 
+
+
+
+Definition at line \mbox{\hyperlink{_mines_8java_source_l00024}{24}} of file \mbox{\hyperlink{_mines_8java_source}{Mines.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ setDefaultCloseOperation(JFrame.EXIT\_ON\_CLOSE);}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ setSize(\mbox{\hyperlink{classmines_1_1_mines_a27ffb5ee06ad8e8674b44b4f98e2cd41}{WIDTH}},\ \mbox{\hyperlink{classmines_1_1_mines_a97880ba0b5fc42f3cbd339e104895b78}{HEIGHT}});}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ setLocationRelativeTo(\textcolor{keyword}{null});}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ setTitle(\textcolor{stringliteral}{"{}Minesweeper"{}});}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_mines_ad0cd9a0c720e0b5812a8545495f322c7}{statusbar}}\ =\ \textcolor{keyword}{new}\ JLabel(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ add(\mbox{\hyperlink{classmines_1_1_mines_ad0cd9a0c720e0b5812a8545495f322c7}{statusbar}},\ BorderLayout.SOUTH);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ add(\textcolor{keyword}{new}\ Board(\mbox{\hyperlink{classmines_1_1_mines_ad0cd9a0c720e0b5812a8545495f322c7}{statusbar}}));}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ setResizable(\textcolor{keyword}{false});}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ setVisible(\textcolor{keyword}{true});}
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmines_1_1_mines_a76f3f083a3b7ff74d621e5387d38f37f}\label{classmines_1_1_mines_a76f3f083a3b7ff74d621e5387d38f37f}} 
+\index{mines.Mines@{mines.Mines}!main@{main}}
+\index{main@{main}!mines.Mines@{mines.Mines}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void mines.\+Mines.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Entry point of the Mines game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & Command-\/line arguments (not used). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_mines_8java_source_l00043}{43}} of file \mbox{\hyperlink{_mines_8java_source}{Mines.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keyword}{new}\ \mbox{\hyperlink{classmines_1_1_mines_ae41fe72d42c1a61b80d141d5c57a3fe9}{Mines}}();}
+\DoxyCodeLine{00045\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmines_1_1_mines_a97880ba0b5fc42f3cbd339e104895b78}\label{classmines_1_1_mines_a97880ba0b5fc42f3cbd339e104895b78}} 
+\index{mines.Mines@{mines.Mines}!HEIGHT@{HEIGHT}}
+\index{HEIGHT@{HEIGHT}!mines.Mines@{mines.Mines}}
+\doxysubsubsection{\texorpdfstring{HEIGHT}{HEIGHT}}
+{\footnotesize\ttfamily final int mines.\+Mines.\+HEIGHT = 290\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_mines_8java_source_l00018}{18}} of file \mbox{\hyperlink{_mines_8java_source}{Mines.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_mines_abc56bc0374373f7a284c0b16590e7454}\label{classmines_1_1_mines_abc56bc0374373f7a284c0b16590e7454}} 
+\index{mines.Mines@{mines.Mines}!serialVersionUID@{serialVersionUID}}
+\index{serialVersionUID@{serialVersionUID}!mines.Mines@{mines.Mines}}
+\doxysubsubsection{\texorpdfstring{serialVersionUID}{serialVersionUID}}
+{\footnotesize\ttfamily final long mines.\+Mines.\+serial\+Version\+UID = 4772165125287256837L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_mines_8java_source_l00015}{15}} of file \mbox{\hyperlink{_mines_8java_source}{Mines.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_mines_ad0cd9a0c720e0b5812a8545495f322c7}\label{classmines_1_1_mines_ad0cd9a0c720e0b5812a8545495f322c7}} 
+\index{mines.Mines@{mines.Mines}!statusbar@{statusbar}}
+\index{statusbar@{statusbar}!mines.Mines@{mines.Mines}}
+\doxysubsubsection{\texorpdfstring{statusbar}{statusbar}}
+{\footnotesize\ttfamily JLabel mines.\+Mines.\+statusbar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_mines_8java_source_l00020}{20}} of file \mbox{\hyperlink{_mines_8java_source}{Mines.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_mines_a27ffb5ee06ad8e8674b44b4f98e2cd41}\label{classmines_1_1_mines_a27ffb5ee06ad8e8674b44b4f98e2cd41}} 
+\index{mines.Mines@{mines.Mines}!WIDTH@{WIDTH}}
+\index{WIDTH@{WIDTH}!mines.Mines@{mines.Mines}}
+\doxysubsubsection{\texorpdfstring{WIDTH}{WIDTH}}
+{\footnotesize\ttfamily final int mines.\+Mines.\+WIDTH = 250\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_mines_8java_source_l00017}{17}} of file \mbox{\hyperlink{_mines_8java_source}{Mines.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/mines/\mbox{\hyperlink{_mines_8java}{Mines.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,622 @@
+\hypertarget{classmines_1_1_board}{}\doxysection{mines.\+Board Class Reference}
+\label{classmines_1_1_board}\index{mines.Board@{mines.Board}}
+
+
+Represents the Minesweeper game board.  
+
+
+Inheritance diagram for mines.\+Board\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmines_1_1_board}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Mines\+Adapter}
+\begin{DoxyCompactList}\small\item\em Custom Mouse\+Adapter to handle mouse events on the game board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmines_1_1_board_a8a3ada86ad1e8fa1e02ea262cfed8182}{Board}} (JLabel \mbox{\hyperlink{classmines_1_1_board_a8805fdd2b295fa070469143ab099018a}{statusbar}})
+\begin{DoxyCompactList}\small\item\em Constructs a new Board instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmines_1_1_board_a2b2ae288a75e512cd87a79fae0bd06db}{new\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Starts a new game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmines_1_1_board_a201158b5eb9ba82dfd797487e2d0acf4}{find\+\_\+empty\+\_\+cells}} (int j)
+\begin{DoxyCompactList}\small\item\em Recursively finds and reveals empty cells. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classmines_1_1_board_a57bdb8c3d5a3e7e6d9a6c7c2766690f5}{paint}} (Graphics g)
+\begin{DoxyCompactList}\small\item\em Paints the game board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+final int \mbox{\hyperlink{classmines_1_1_board_a0cebbf138d07f255e6b39ccbc5981c7f}{NUM\+\_\+\+IMAGES}} = 13
+\item 
+final int \mbox{\hyperlink{classmines_1_1_board_a012d44ab3e4de47e436f0ebf14304ae8}{CELL\+\_\+\+SIZE}} = 15
+\item 
+final int \mbox{\hyperlink{classmines_1_1_board_a5341d4abe5bcfa82773c83af0ad151f6}{COVER\+\_\+\+FOR\+\_\+\+CELL}} = 10
+\item 
+final int \mbox{\hyperlink{classmines_1_1_board_a23ec9b7eae45e2f2a5972b097c8a3bc9}{MARK\+\_\+\+FOR\+\_\+\+CELL}} = 10
+\item 
+final int \mbox{\hyperlink{classmines_1_1_board_a8b558c6007fe1cea5f02a1b1b5286326}{EMPTY\+\_\+\+CELL}} = 0
+\item 
+final int \mbox{\hyperlink{classmines_1_1_board_a4f07ce6588f4793a1f9ce29a93152b84}{MINE\+\_\+\+CELL}} = 9
+\item 
+final int \mbox{\hyperlink{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}{COVERED\+\_\+\+MINE\+\_\+\+CELL}} = \mbox{\hyperlink{classmines_1_1_board_a4f07ce6588f4793a1f9ce29a93152b84}{MINE\+\_\+\+CELL}} + \mbox{\hyperlink{classmines_1_1_board_a5341d4abe5bcfa82773c83af0ad151f6}{COVER\+\_\+\+FOR\+\_\+\+CELL}}
+\item 
+final int \mbox{\hyperlink{classmines_1_1_board_ac5d9584b64867249ac33d4d3e1cc77a9}{MARKED\+\_\+\+MINE\+\_\+\+CELL}} = \mbox{\hyperlink{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}{COVERED\+\_\+\+MINE\+\_\+\+CELL}} + \mbox{\hyperlink{classmines_1_1_board_a23ec9b7eae45e2f2a5972b097c8a3bc9}{MARK\+\_\+\+FOR\+\_\+\+CELL}}
+\item 
+final int \mbox{\hyperlink{classmines_1_1_board_a17c083374c7ab24a69372965417965e9}{DRAW\+\_\+\+MINE}} = 9
+\item 
+final int \mbox{\hyperlink{classmines_1_1_board_adf6ff16f8834ce7ce8584efc95818e31}{DRAW\+\_\+\+COVER}} = 10
+\item 
+final int \mbox{\hyperlink{classmines_1_1_board_a6f0f23bf655d251f7bbc308acd815190}{DRAW\+\_\+\+MARK}} = 11
+\item 
+final int \mbox{\hyperlink{classmines_1_1_board_a484a01ce8c3f8c26764ca29abc6ced31}{DRAW\+\_\+\+WRONG\+\_\+\+MARK}} = 12
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}
+\item 
+boolean \mbox{\hyperlink{classmines_1_1_board_a30ec8f49d9b23df89c99703558a13e29}{in\+Game}}
+\item 
+int \mbox{\hyperlink{classmines_1_1_board_abe43326f16cf4fa8115fe15b8a618829}{mines\+\_\+left}}
+\item 
+Image\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmines_1_1_board_aa64855d511845eedca1b404c08a0e812}{img}}
+\item 
+int \mbox{\hyperlink{classmines_1_1_board_a8a8500d662c41b388baf6cb2119f9cf8}{mines}} = 40
+\item 
+int \mbox{\hyperlink{classmines_1_1_board_af457a2f2a5bd1834caa9551198f8e000}{rows}} = 16
+\item 
+int \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}} = 16
+\item 
+int \mbox{\hyperlink{classmines_1_1_board_a490eb488fe05bea73b12c5f99f8d0a5a}{all\+\_\+cells}}
+\item 
+JLabel \mbox{\hyperlink{classmines_1_1_board_a8805fdd2b295fa070469143ab099018a}{statusbar}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final long \mbox{\hyperlink{classmines_1_1_board_a8d10ce0a00b56267d6b4e3de15e4d6a2}{serial\+Version\+UID}} = 6195235521361212179L
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the Minesweeper game board. 
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00021}{21}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmines_1_1_board_a8a3ada86ad1e8fa1e02ea262cfed8182}\label{classmines_1_1_board_a8a3ada86ad1e8fa1e02ea262cfed8182}} 
+\index{mines.Board@{mines.Board}!Board@{Board}}
+\index{Board@{Board}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}}
+{\footnotesize\ttfamily mines.\+Board.\+Board (\begin{DoxyParamCaption}\item[{JLabel}]{statusbar }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a new Board instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em statusbar} & The label to display game status. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00057}{57}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ this.statusbar\ =\ \mbox{\hyperlink{classmines_1_1_board_a8805fdd2b295fa070469143ab099018a}{statusbar}};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_aa64855d511845eedca1b404c08a0e812}{img}}\ =\ \textcolor{keyword}{new}\ Image[\mbox{\hyperlink{classmines_1_1_board_a0cebbf138d07f255e6b39ccbc5981c7f}{NUM\_IMAGES}}];}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \mbox{\hyperlink{classmines_1_1_board_a0cebbf138d07f255e6b39ccbc5981c7f}{NUM\_IMAGES}};\ i++)\ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_aa64855d511845eedca1b404c08a0e812}{img}}[i]\ =}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{keyword}{new}\ ImageIcon(getClass().getClassLoader().getResource((i)}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ +\ \textcolor{stringliteral}{"{}.gif"{}}))).getImage();}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ setDoubleBuffered(\textcolor{keyword}{true});}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ addMouseListener(\textcolor{keyword}{new}\ MinesAdapter());}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_a2b2ae288a75e512cd87a79fae0bd06db}{newGame}}();}
+\DoxyCodeLine{00073\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmines_1_1_board_a201158b5eb9ba82dfd797487e2d0acf4}\label{classmines_1_1_board_a201158b5eb9ba82dfd797487e2d0acf4}} 
+\index{mines.Board@{mines.Board}!find\_empty\_cells@{find\_empty\_cells}}
+\index{find\_empty\_cells@{find\_empty\_cells}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{find\_empty\_cells()}{find\_empty\_cells()}}
+{\footnotesize\ttfamily void mines.\+Board.\+find\+\_\+empty\+\_\+cells (\begin{DoxyParamCaption}\item[{int}]{j }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Recursively finds and reveals empty cells. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em j} & The index of the current cell. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00163}{163}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ current\_col\ =\ j\ \%\ \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}};}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ cell;}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (current\_col\ >\ 0)\ \{\ }
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ j\ -\/\ \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}}\ -\/\ 1;}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ >=\ 0)}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ >\ \mbox{\hyperlink{classmines_1_1_board_a4f07ce6588f4793a1f9ce29a93152b84}{MINE\_CELL}})\ \{}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ -\/=\ \mbox{\hyperlink{classmines_1_1_board_a5341d4abe5bcfa82773c83af0ad151f6}{COVER\_FOR\_CELL}};}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ ==\ \mbox{\hyperlink{classmines_1_1_board_a8b558c6007fe1cea5f02a1b1b5286326}{EMPTY\_CELL}})}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_a201158b5eb9ba82dfd797487e2d0acf4}{find\_empty\_cells}}(cell);}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ j\ -\/\ 1;}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ >=\ 0)}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ >\ \mbox{\hyperlink{classmines_1_1_board_a4f07ce6588f4793a1f9ce29a93152b84}{MINE\_CELL}})\ \{}
+\DoxyCodeLine{00180\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ -\/=\ \mbox{\hyperlink{classmines_1_1_board_a5341d4abe5bcfa82773c83af0ad151f6}{COVER\_FOR\_CELL}};}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ ==\ \mbox{\hyperlink{classmines_1_1_board_a8b558c6007fe1cea5f02a1b1b5286326}{EMPTY\_CELL}})}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_a201158b5eb9ba82dfd797487e2d0acf4}{find\_empty\_cells}}(cell);}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00184\ }
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ j\ +\ \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}}\ -\/\ 1;}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ <\ \mbox{\hyperlink{classmines_1_1_board_a490eb488fe05bea73b12c5f99f8d0a5a}{all\_cells}})}
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ >\ \mbox{\hyperlink{classmines_1_1_board_a4f07ce6588f4793a1f9ce29a93152b84}{MINE\_CELL}})\ \{}
+\DoxyCodeLine{00188\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ -\/=\ \mbox{\hyperlink{classmines_1_1_board_a5341d4abe5bcfa82773c83af0ad151f6}{COVER\_FOR\_CELL}};}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ ==\ \mbox{\hyperlink{classmines_1_1_board_a8b558c6007fe1cea5f02a1b1b5286326}{EMPTY\_CELL}})}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_a201158b5eb9ba82dfd797487e2d0acf4}{find\_empty\_cells}}(cell);}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ cell\ =\ j\ -\/\ \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}};}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ >=\ 0)}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ >\ \mbox{\hyperlink{classmines_1_1_board_a4f07ce6588f4793a1f9ce29a93152b84}{MINE\_CELL}})\ \{}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ -\/=\ \mbox{\hyperlink{classmines_1_1_board_a5341d4abe5bcfa82773c83af0ad151f6}{COVER\_FOR\_CELL}};}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ ==\ \mbox{\hyperlink{classmines_1_1_board_a8b558c6007fe1cea5f02a1b1b5286326}{EMPTY\_CELL}})}
+\DoxyCodeLine{00199\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_a201158b5eb9ba82dfd797487e2d0acf4}{find\_empty\_cells}}(cell);}
+\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ cell\ =\ j\ +\ \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}};}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ <\ \mbox{\hyperlink{classmines_1_1_board_a490eb488fe05bea73b12c5f99f8d0a5a}{all\_cells}})}
+\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ >\ \mbox{\hyperlink{classmines_1_1_board_a4f07ce6588f4793a1f9ce29a93152b84}{MINE\_CELL}})\ \{}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ -\/=\ \mbox{\hyperlink{classmines_1_1_board_a5341d4abe5bcfa82773c83af0ad151f6}{COVER\_FOR\_CELL}};}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ ==\ \mbox{\hyperlink{classmines_1_1_board_a8b558c6007fe1cea5f02a1b1b5286326}{EMPTY\_CELL}})}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_a201158b5eb9ba82dfd797487e2d0acf4}{find\_empty\_cells}}(cell);}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00209\ }
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (current\_col\ <\ (\mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}}\ -\/\ 1))\ \{}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ j\ -\/\ \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}}\ +\ 1;}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ >=\ 0)}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ >\ \mbox{\hyperlink{classmines_1_1_board_a4f07ce6588f4793a1f9ce29a93152b84}{MINE\_CELL}})\ \{}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ -\/=\ \mbox{\hyperlink{classmines_1_1_board_a5341d4abe5bcfa82773c83af0ad151f6}{COVER\_FOR\_CELL}};}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ ==\ \mbox{\hyperlink{classmines_1_1_board_a8b558c6007fe1cea5f02a1b1b5286326}{EMPTY\_CELL}})}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_a201158b5eb9ba82dfd797487e2d0acf4}{find\_empty\_cells}}(cell);}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00218\ }
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ j\ +\ \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}}\ +\ 1;}
+\DoxyCodeLine{00220\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ <\ \mbox{\hyperlink{classmines_1_1_board_a490eb488fe05bea73b12c5f99f8d0a5a}{all\_cells}})}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ >\ \mbox{\hyperlink{classmines_1_1_board_a4f07ce6588f4793a1f9ce29a93152b84}{MINE\_CELL}})\ \{}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ -\/=\ \mbox{\hyperlink{classmines_1_1_board_a5341d4abe5bcfa82773c83af0ad151f6}{COVER\_FOR\_CELL}};}
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ ==\ \mbox{\hyperlink{classmines_1_1_board_a8b558c6007fe1cea5f02a1b1b5286326}{EMPTY\_CELL}})}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_a201158b5eb9ba82dfd797487e2d0acf4}{find\_empty\_cells}}(cell);}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00226\ }
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ j\ +\ 1;}
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ <\ \mbox{\hyperlink{classmines_1_1_board_a490eb488fe05bea73b12c5f99f8d0a5a}{all\_cells}})}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ >\ \mbox{\hyperlink{classmines_1_1_board_a4f07ce6588f4793a1f9ce29a93152b84}{MINE\_CELL}})\ \{}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ -\/=\ \mbox{\hyperlink{classmines_1_1_board_a5341d4abe5bcfa82773c83af0ad151f6}{COVER\_FOR\_CELL}};}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ ==\ \mbox{\hyperlink{classmines_1_1_board_a8b558c6007fe1cea5f02a1b1b5286326}{EMPTY\_CELL}})}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_a201158b5eb9ba82dfd797487e2d0acf4}{find\_empty\_cells}}(cell);}
+\DoxyCodeLine{00233\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00235\ }
+\DoxyCodeLine{00236\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmines_1_1_board_a2b2ae288a75e512cd87a79fae0bd06db}\label{classmines_1_1_board_a2b2ae288a75e512cd87a79fae0bd06db}} 
+\index{mines.Board@{mines.Board}!newGame@{newGame}}
+\index{newGame@{newGame}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{newGame()}{newGame()}}
+{\footnotesize\ttfamily void mines.\+Board.\+new\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Starts a new game. 
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00079}{79}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ Random\ random;}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ current\_col;}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ i\ =\ 0;}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ position\ =\ 0;}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ cell\ =\ 0;}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ random\ =\ \textcolor{keyword}{new}\ Random();}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_a30ec8f49d9b23df89c99703558a13e29}{inGame}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_abe43326f16cf4fa8115fe15b8a618829}{mines\_left}}\ =\ \mbox{\hyperlink{classmines_1_1_board_a8a8500d662c41b388baf6cb2119f9cf8}{mines}};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_a490eb488fe05bea73b12c5f99f8d0a5a}{all\_cells}}\ =\ \mbox{\hyperlink{classmines_1_1_board_af457a2f2a5bd1834caa9551198f8e000}{rows}}\ *\ \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}};}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}\ =\ \textcolor{keyword}{new}\ \textcolor{keywordtype}{int}[\mbox{\hyperlink{classmines_1_1_board_a490eb488fe05bea73b12c5f99f8d0a5a}{all\_cells}}];}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (i\ =\ 0;\ i\ <\ \mbox{\hyperlink{classmines_1_1_board_a490eb488fe05bea73b12c5f99f8d0a5a}{all\_cells}};\ i++)}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[i]\ =\ \mbox{\hyperlink{classmines_1_1_board_a5341d4abe5bcfa82773c83af0ad151f6}{COVER\_FOR\_CELL}};}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_a8805fdd2b295fa070469143ab099018a}{statusbar}}.setText(Integer.toString(\mbox{\hyperlink{classmines_1_1_board_abe43326f16cf4fa8115fe15b8a618829}{mines\_left}}));}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ i\ =\ 0;}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (i\ <\ \mbox{\hyperlink{namespacemines}{mines}})\ \{}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ position\ =\ (int)\ (\mbox{\hyperlink{classmines_1_1_board_a490eb488fe05bea73b12c5f99f8d0a5a}{all\_cells}}\ *\ random.nextDouble());}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((position\ <\ \mbox{\hyperlink{classmines_1_1_board_a490eb488fe05bea73b12c5f99f8d0a5a}{all\_cells}})\ \&\&}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[position]\ !=\ \mbox{\hyperlink{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}{COVERED\_MINE\_CELL}}))\ \{}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ current\_col\ =\ position\ \%\ \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}};}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[position]\ =\ \mbox{\hyperlink{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}{COVERED\_MINE\_CELL}};}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ i++;}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (current\_col\ >\ 0)\ \{\ }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ position\ -\/\ 1\ -\/\ \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}};}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ >=\ 0)}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ !=\ \mbox{\hyperlink{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}{COVERED\_MINE\_CELL}})}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ +=\ 1;}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ position\ -\/\ 1;}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ >=\ 0)}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ !=\ \mbox{\hyperlink{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}{COVERED\_MINE\_CELL}})}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ +=\ 1;}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ position\ +\ \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}}\ -\/\ 1;}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ <\ \mbox{\hyperlink{classmines_1_1_board_a490eb488fe05bea73b12c5f99f8d0a5a}{all\_cells}})}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ !=\ \mbox{\hyperlink{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}{COVERED\_MINE\_CELL}})}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ +=\ 1;}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ position\ -\/\ \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}};}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ >=\ 0)}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ !=\ \mbox{\hyperlink{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}{COVERED\_MINE\_CELL}})}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ +=\ 1;}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ position\ +\ \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}};}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ <\ \mbox{\hyperlink{classmines_1_1_board_a490eb488fe05bea73b12c5f99f8d0a5a}{all\_cells}})}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ !=\ \mbox{\hyperlink{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}{COVERED\_MINE\_CELL}})}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ +=\ 1;}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (current\_col\ <\ (\mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}}\ -\/\ 1))\ \{}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ position\ -\/\ \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}}\ +\ 1;}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ >=\ 0)}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ !=\ \mbox{\hyperlink{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}{COVERED\_MINE\_CELL}})}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ +=\ 1;}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ position\ +\ \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}}\ +\ 1;}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ <\ \mbox{\hyperlink{classmines_1_1_board_a490eb488fe05bea73b12c5f99f8d0a5a}{all\_cells}})}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ !=\ \mbox{\hyperlink{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}{COVERED\_MINE\_CELL}})}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ +=\ 1;}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ position\ +\ 1;}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ <\ \mbox{\hyperlink{classmines_1_1_board_a490eb488fe05bea73b12c5f99f8d0a5a}{all\_cells}})}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ !=\ \mbox{\hyperlink{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}{COVERED\_MINE\_CELL}})}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[cell]\ +=\ 1;}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00155\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classmines_1_1_board_a57bdb8c3d5a3e7e6d9a6c7c2766690f5}\label{classmines_1_1_board_a57bdb8c3d5a3e7e6d9a6c7c2766690f5}} 
+\index{mines.Board@{mines.Board}!paint@{paint}}
+\index{paint@{paint}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void mines.\+Board.\+paint (\begin{DoxyParamCaption}\item[{Graphics}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Paints the game board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The Graphics object to paint on. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00243}{243}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00244\ }
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ cell\ =\ 0;}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ uncover\ =\ 0;}
+\DoxyCodeLine{00247\ }
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00249\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \mbox{\hyperlink{classmines_1_1_board_af457a2f2a5bd1834caa9551198f8e000}{rows}};\ i++)\ \{}
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ j\ =\ 0;\ j\ <\ \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}};\ j++)\ \{}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ \mbox{\hyperlink{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}{field}}[(i\ *\ \mbox{\hyperlink{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}{cols}})\ +\ j];}
+\DoxyCodeLine{00253\ }
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classmines_1_1_board_a30ec8f49d9b23df89c99703558a13e29}{inGame}}\ \&\&\ cell\ ==\ \mbox{\hyperlink{classmines_1_1_board_a4f07ce6588f4793a1f9ce29a93152b84}{MINE\_CELL}})}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_a30ec8f49d9b23df89c99703558a13e29}{inGame}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00256\ }
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classmines_1_1_board_a30ec8f49d9b23df89c99703558a13e29}{inGame}})\ \{}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ ==\ \mbox{\hyperlink{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}{COVERED\_MINE\_CELL}})\ \{}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ \mbox{\hyperlink{classmines_1_1_board_a17c083374c7ab24a69372965417965e9}{DRAW\_MINE}};}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (cell\ ==\ \mbox{\hyperlink{classmines_1_1_board_ac5d9584b64867249ac33d4d3e1cc77a9}{MARKED\_MINE\_CELL}})\ \{}
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ \mbox{\hyperlink{classmines_1_1_board_a6f0f23bf655d251f7bbc308acd815190}{DRAW\_MARK}};}
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (cell\ >\ \mbox{\hyperlink{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}{COVERED\_MINE\_CELL}})\ \{}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ \mbox{\hyperlink{classmines_1_1_board_a484a01ce8c3f8c26764ca29abc6ced31}{DRAW\_WRONG\_MARK}};}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (cell\ >\ \mbox{\hyperlink{classmines_1_1_board_a4f07ce6588f4793a1f9ce29a93152b84}{MINE\_CELL}})\ \{}
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ \mbox{\hyperlink{classmines_1_1_board_adf6ff16f8834ce7ce8584efc95818e31}{DRAW\_COVER}};}
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00267\ }
+\DoxyCodeLine{00268\ }
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (cell\ >\ \mbox{\hyperlink{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}{COVERED\_MINE\_CELL}})}
+\DoxyCodeLine{00271\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ \mbox{\hyperlink{classmines_1_1_board_a6f0f23bf655d251f7bbc308acd815190}{DRAW\_MARK}};}
+\DoxyCodeLine{00272\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (cell\ >\ \mbox{\hyperlink{classmines_1_1_board_a4f07ce6588f4793a1f9ce29a93152b84}{MINE\_CELL}})\ \{}
+\DoxyCodeLine{00273\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cell\ =\ \mbox{\hyperlink{classmines_1_1_board_adf6ff16f8834ce7ce8584efc95818e31}{DRAW\_COVER}};}
+\DoxyCodeLine{00274\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uncover++;}
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00277\ }
+\DoxyCodeLine{00278\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ g.drawImage(\mbox{\hyperlink{classmines_1_1_board_aa64855d511845eedca1b404c08a0e812}{img}}[cell],\ (j\ *\ \mbox{\hyperlink{classmines_1_1_board_a012d44ab3e4de47e436f0ebf14304ae8}{CELL\_SIZE}}),}
+\DoxyCodeLine{00279\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (i\ *\ \mbox{\hyperlink{classmines_1_1_board_a012d44ab3e4de47e436f0ebf14304ae8}{CELL\_SIZE}}),\ \textcolor{keyword}{this});}
+\DoxyCodeLine{00280\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00282\ }
+\DoxyCodeLine{00283\ }
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (uncover\ ==\ 0\ \&\&\ \mbox{\hyperlink{classmines_1_1_board_a30ec8f49d9b23df89c99703558a13e29}{inGame}})\ \{}
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_a30ec8f49d9b23df89c99703558a13e29}{inGame}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_a8805fdd2b295fa070469143ab099018a}{statusbar}}.setText(\textcolor{stringliteral}{"{}Game\ won"{}});}
+\DoxyCodeLine{00287\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classmines_1_1_board_a30ec8f49d9b23df89c99703558a13e29}{inGame}})}
+\DoxyCodeLine{00288\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classmines_1_1_board_a8805fdd2b295fa070469143ab099018a}{statusbar}}.setText(\textcolor{stringliteral}{"{}Game\ lost"{}});}
+\DoxyCodeLine{00289\ \ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmines_1_1_board_a490eb488fe05bea73b12c5f99f8d0a5a}\label{classmines_1_1_board_a490eb488fe05bea73b12c5f99f8d0a5a}} 
+\index{mines.Board@{mines.Board}!all\_cells@{all\_cells}}
+\index{all\_cells@{all\_cells}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{all\_cells}{all\_cells}}
+{\footnotesize\ttfamily int mines.\+Board.\+all\+\_\+cells\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00048}{48}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_a012d44ab3e4de47e436f0ebf14304ae8}\label{classmines_1_1_board_a012d44ab3e4de47e436f0ebf14304ae8}} 
+\index{mines.Board@{mines.Board}!CELL\_SIZE@{CELL\_SIZE}}
+\index{CELL\_SIZE@{CELL\_SIZE}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{CELL\_SIZE}{CELL\_SIZE}}
+{\footnotesize\ttfamily final int mines.\+Board.\+CELL\+\_\+\+SIZE = 15\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00026}{26}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}\label{classmines_1_1_board_a836ac63d27437c5659e1645f12daaab1}} 
+\index{mines.Board@{mines.Board}!cols@{cols}}
+\index{cols@{cols}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{cols}{cols}}
+{\footnotesize\ttfamily int mines.\+Board.\+cols = 16\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00047}{47}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_a5341d4abe5bcfa82773c83af0ad151f6}\label{classmines_1_1_board_a5341d4abe5bcfa82773c83af0ad151f6}} 
+\index{mines.Board@{mines.Board}!COVER\_FOR\_CELL@{COVER\_FOR\_CELL}}
+\index{COVER\_FOR\_CELL@{COVER\_FOR\_CELL}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{COVER\_FOR\_CELL}{COVER\_FOR\_CELL}}
+{\footnotesize\ttfamily final int mines.\+Board.\+COVER\+\_\+\+FOR\+\_\+\+CELL = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00028}{28}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}\label{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}} 
+\index{mines.Board@{mines.Board}!COVERED\_MINE\_CELL@{COVERED\_MINE\_CELL}}
+\index{COVERED\_MINE\_CELL@{COVERED\_MINE\_CELL}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{COVERED\_MINE\_CELL}{COVERED\_MINE\_CELL}}
+{\footnotesize\ttfamily final int mines.\+Board.\+COVERED\+\_\+\+MINE\+\_\+\+CELL = \mbox{\hyperlink{classmines_1_1_board_a4f07ce6588f4793a1f9ce29a93152b84}{MINE\+\_\+\+CELL}} + \mbox{\hyperlink{classmines_1_1_board_a5341d4abe5bcfa82773c83af0ad151f6}{COVER\+\_\+\+FOR\+\_\+\+CELL}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00032}{32}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_adf6ff16f8834ce7ce8584efc95818e31}\label{classmines_1_1_board_adf6ff16f8834ce7ce8584efc95818e31}} 
+\index{mines.Board@{mines.Board}!DRAW\_COVER@{DRAW\_COVER}}
+\index{DRAW\_COVER@{DRAW\_COVER}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{DRAW\_COVER}{DRAW\_COVER}}
+{\footnotesize\ttfamily final int mines.\+Board.\+DRAW\+\_\+\+COVER = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00036}{36}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_a6f0f23bf655d251f7bbc308acd815190}\label{classmines_1_1_board_a6f0f23bf655d251f7bbc308acd815190}} 
+\index{mines.Board@{mines.Board}!DRAW\_MARK@{DRAW\_MARK}}
+\index{DRAW\_MARK@{DRAW\_MARK}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{DRAW\_MARK}{DRAW\_MARK}}
+{\footnotesize\ttfamily final int mines.\+Board.\+DRAW\+\_\+\+MARK = 11\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00037}{37}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_a17c083374c7ab24a69372965417965e9}\label{classmines_1_1_board_a17c083374c7ab24a69372965417965e9}} 
+\index{mines.Board@{mines.Board}!DRAW\_MINE@{DRAW\_MINE}}
+\index{DRAW\_MINE@{DRAW\_MINE}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{DRAW\_MINE}{DRAW\_MINE}}
+{\footnotesize\ttfamily final int mines.\+Board.\+DRAW\+\_\+\+MINE = 9\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00035}{35}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_a484a01ce8c3f8c26764ca29abc6ced31}\label{classmines_1_1_board_a484a01ce8c3f8c26764ca29abc6ced31}} 
+\index{mines.Board@{mines.Board}!DRAW\_WRONG\_MARK@{DRAW\_WRONG\_MARK}}
+\index{DRAW\_WRONG\_MARK@{DRAW\_WRONG\_MARK}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{DRAW\_WRONG\_MARK}{DRAW\_WRONG\_MARK}}
+{\footnotesize\ttfamily final int mines.\+Board.\+DRAW\+\_\+\+WRONG\+\_\+\+MARK = 12\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00038}{38}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_a8b558c6007fe1cea5f02a1b1b5286326}\label{classmines_1_1_board_a8b558c6007fe1cea5f02a1b1b5286326}} 
+\index{mines.Board@{mines.Board}!EMPTY\_CELL@{EMPTY\_CELL}}
+\index{EMPTY\_CELL@{EMPTY\_CELL}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{EMPTY\_CELL}{EMPTY\_CELL}}
+{\footnotesize\ttfamily final int mines.\+Board.\+EMPTY\+\_\+\+CELL = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00030}{30}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}\label{classmines_1_1_board_af29ebc0b9db0139680bb60e080c5d5be}} 
+\index{mines.Board@{mines.Board}!field@{field}}
+\index{field@{field}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{field}{field}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} mines.\+Board.\+field\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00041}{41}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_aa64855d511845eedca1b404c08a0e812}\label{classmines_1_1_board_aa64855d511845eedca1b404c08a0e812}} 
+\index{mines.Board@{mines.Board}!img@{img}}
+\index{img@{img}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{img}{img}}
+{\footnotesize\ttfamily Image \mbox{[}$\,$\mbox{]} mines.\+Board.\+img\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00044}{44}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_a30ec8f49d9b23df89c99703558a13e29}\label{classmines_1_1_board_a30ec8f49d9b23df89c99703558a13e29}} 
+\index{mines.Board@{mines.Board}!inGame@{inGame}}
+\index{inGame@{inGame}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{inGame}{inGame}}
+{\footnotesize\ttfamily boolean mines.\+Board.\+in\+Game\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00042}{42}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_a23ec9b7eae45e2f2a5972b097c8a3bc9}\label{classmines_1_1_board_a23ec9b7eae45e2f2a5972b097c8a3bc9}} 
+\index{mines.Board@{mines.Board}!MARK\_FOR\_CELL@{MARK\_FOR\_CELL}}
+\index{MARK\_FOR\_CELL@{MARK\_FOR\_CELL}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{MARK\_FOR\_CELL}{MARK\_FOR\_CELL}}
+{\footnotesize\ttfamily final int mines.\+Board.\+MARK\+\_\+\+FOR\+\_\+\+CELL = 10\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00029}{29}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_ac5d9584b64867249ac33d4d3e1cc77a9}\label{classmines_1_1_board_ac5d9584b64867249ac33d4d3e1cc77a9}} 
+\index{mines.Board@{mines.Board}!MARKED\_MINE\_CELL@{MARKED\_MINE\_CELL}}
+\index{MARKED\_MINE\_CELL@{MARKED\_MINE\_CELL}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{MARKED\_MINE\_CELL}{MARKED\_MINE\_CELL}}
+{\footnotesize\ttfamily final int mines.\+Board.\+MARKED\+\_\+\+MINE\+\_\+\+CELL = \mbox{\hyperlink{classmines_1_1_board_a5d50b40d6f8122cf3978a59cb449516f}{COVERED\+\_\+\+MINE\+\_\+\+CELL}} + \mbox{\hyperlink{classmines_1_1_board_a23ec9b7eae45e2f2a5972b097c8a3bc9}{MARK\+\_\+\+FOR\+\_\+\+CELL}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00033}{33}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_a4f07ce6588f4793a1f9ce29a93152b84}\label{classmines_1_1_board_a4f07ce6588f4793a1f9ce29a93152b84}} 
+\index{mines.Board@{mines.Board}!MINE\_CELL@{MINE\_CELL}}
+\index{MINE\_CELL@{MINE\_CELL}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{MINE\_CELL}{MINE\_CELL}}
+{\footnotesize\ttfamily final int mines.\+Board.\+MINE\+\_\+\+CELL = 9\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00031}{31}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_a8a8500d662c41b388baf6cb2119f9cf8}\label{classmines_1_1_board_a8a8500d662c41b388baf6cb2119f9cf8}} 
+\index{mines.Board@{mines.Board}!mines@{mines}}
+\index{mines@{mines}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{mines}{mines}}
+{\footnotesize\ttfamily int mines.\+Board.\+mines = 40\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00045}{45}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_abe43326f16cf4fa8115fe15b8a618829}\label{classmines_1_1_board_abe43326f16cf4fa8115fe15b8a618829}} 
+\index{mines.Board@{mines.Board}!mines\_left@{mines\_left}}
+\index{mines\_left@{mines\_left}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{mines\_left}{mines\_left}}
+{\footnotesize\ttfamily int mines.\+Board.\+mines\+\_\+left\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00043}{43}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_a0cebbf138d07f255e6b39ccbc5981c7f}\label{classmines_1_1_board_a0cebbf138d07f255e6b39ccbc5981c7f}} 
+\index{mines.Board@{mines.Board}!NUM\_IMAGES@{NUM\_IMAGES}}
+\index{NUM\_IMAGES@{NUM\_IMAGES}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{NUM\_IMAGES}{NUM\_IMAGES}}
+{\footnotesize\ttfamily final int mines.\+Board.\+NUM\+\_\+\+IMAGES = 13\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00025}{25}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_af457a2f2a5bd1834caa9551198f8e000}\label{classmines_1_1_board_af457a2f2a5bd1834caa9551198f8e000}} 
+\index{mines.Board@{mines.Board}!rows@{rows}}
+\index{rows@{rows}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{rows}{rows}}
+{\footnotesize\ttfamily int mines.\+Board.\+rows = 16\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00046}{46}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_a8d10ce0a00b56267d6b4e3de15e4d6a2}\label{classmines_1_1_board_a8d10ce0a00b56267d6b4e3de15e4d6a2}} 
+\index{mines.Board@{mines.Board}!serialVersionUID@{serialVersionUID}}
+\index{serialVersionUID@{serialVersionUID}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{serialVersionUID}{serialVersionUID}}
+{\footnotesize\ttfamily final long mines.\+Board.\+serial\+Version\+UID = 6195235521361212179L\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00022}{22}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+\mbox{\Hypertarget{classmines_1_1_board_a8805fdd2b295fa070469143ab099018a}\label{classmines_1_1_board_a8805fdd2b295fa070469143ab099018a}} 
+\index{mines.Board@{mines.Board}!statusbar@{statusbar}}
+\index{statusbar@{statusbar}!mines.Board@{mines.Board}}
+\doxysubsubsection{\texorpdfstring{statusbar}{statusbar}}
+{\footnotesize\ttfamily JLabel mines.\+Board.\+statusbar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_board_8java_source_l00049}{49}} of file \mbox{\hyperlink{_board_8java_source}{Board.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/mines/\mbox{\hyperlink{_board_8java}{Board.\+java}}\end{DoxyCompactItemize}
